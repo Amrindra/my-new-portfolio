@@ -1,0 +1,76 @@
+:root {
+  --background-color: #000;
+  --secondary-color: #6c757d;
+  --background-dark-color: #10121a;
+  --border-color: #2e344e;
+  --background-light-color: #f1f1f1;
+  --white-color: #fff;
+  --font-light-color: #a4acc4;
+  --font-dark-color: #313131;
+  --font-dark-color-2: #151515;
+  --sidebar-dark-color: #191d2b;
+  /* --primary-color: # */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  /* font-size: 1.2rem; */
+}
+
+body {
+  /* background-color: var(--background-dark-color); */
+  background-color: #eeeeee;
+
+  color: #7f7c82;
+  /* color: var(--font-dark-color) */
+  /* background: linear-gradient(
+    to bottom,
+    rgba(54, 64, 105, 0.33) 0%,
+    rgba(54, 163, 105, 0.33) 100%
+  ); */
+}
+
+/* *********Scrollbar Style Section************* */
+
+body::-webkit-scrollbar {
+  width: 15px;
+  background-color: #383838;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+body::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background-color: #383838;
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+span {
+  color: #1c6dd0;
+  /* font-size: 4rem; */
+}
+
+.nav-toggle {
+  /* transition: all 9s ease-in-out; */
+  left: 0;
+  z-index: 2;
+}
+
+.underline {
+  width: 10rem;
+  height: 0.25rem;
+  background: #e7e0c9;
+  /* margin-left: auto; */
+  margin-right: auto;
+}
