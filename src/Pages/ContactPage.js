@@ -18,7 +18,7 @@ function ContactPage() {
 
     emailjs
       .sendForm(
-        `service_qtw4evm`,
+        `service_${process.env.REACT_APP_SERVICE_ID}`,
 
         "template_buudr87",
 
@@ -61,7 +61,7 @@ function ContactPage() {
             ref={formRef}
             onSubmit={handleSubmit}
             style={{
-              backgroundColor: darkMode && "#222"
+              backgroundColor: darkMode && "#222",
             }}
           >
             <Fade top>
@@ -119,7 +119,7 @@ function ContactPage() {
                 <button
                   style={{
                     backgroundColor: darkMode && "#D5D5D5",
-                    color: darkMode && "#222"
+                    color: darkMode && "#222",
                   }}
                 >
                   {done ? (

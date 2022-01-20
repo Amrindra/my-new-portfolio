@@ -13,7 +13,7 @@ function SkillSection({ skill, progress, width, icon }) {
       <div className="skills-wrapper">
         <div className="icon-percentage">
           <img src={icon} alt="" className="skill-title"></img>
-          <h3 className="skill-text">{progress}</h3>
+          {/* <h3 className="skill-text">{progress}</h3> */}
         </div>
 
         <div className="skill-bar">
@@ -23,7 +23,7 @@ function SkillSection({ skill, progress, width, icon }) {
               className="inner-progress"
               style={{
                 width,
-                background: darkMode && "#1687A7"
+                background: darkMode && "#1687A7",
               }}
             >
               <h3 className="skills">{skill}</h3>
