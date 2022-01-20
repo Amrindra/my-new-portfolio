@@ -18,7 +18,7 @@ function ContactPage() {
 
     emailjs
       .sendForm(
-        `service_${process.env.REACT_APP_SERVICE_ID}`,
+        `service_qtw4evm`,
 
         "template_buudr87",
 
