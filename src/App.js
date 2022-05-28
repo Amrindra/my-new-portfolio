@@ -16,7 +16,7 @@ import AllSections from "./Pages/AllSections";
 import { useLocation } from "react-router";
 // import { Link } from "react-router-dom";
 
-// this ScrollToTop function is used to set the padge to the top
+// this ScrollToTop function is used to handle the page position when we switch to the new page it will remain on the top
 function ScrollToTop(props) {
   const location = useLocation();
 
@@ -40,7 +40,7 @@ export default function App() {
       style={{
         // backgroundColor: darkMode ? "#222" : "#EEEEEE",
         backgroundColor: darkMode && "#191919",
-        color: darkMode && "white"
+        color: darkMode && "white",
       }}
     >
       <ChangeTheme />
