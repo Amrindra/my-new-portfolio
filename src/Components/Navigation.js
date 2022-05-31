@@ -54,7 +54,12 @@ function Navigation({ handleClick }) {
               {/* <NavLink to={item.path} activeclassname={item.activeClassName}>
                 {item.title}
               </NavLink> */}
-              <NavLink to={item.path}>{item.title}</NavLink>
+              <NavLink
+                to={item.path}
+                className={(navData) => (navData.isActive ? "active" : "")}
+              >
+                {item.title}
+              </NavLink>
             </li>
           );
         })}
@@ -99,10 +104,10 @@ const NavigationStyled = styled.nav`
     width: 100%;
     text-align: center;
 
-    /* .active-class {
-    background-color: red;
-    color: white;
-  } */
+    .active {
+      background-color: red;
+      color: white;
+    }
 
     li {
       display: block;
@@ -122,7 +127,6 @@ const NavigationStyled = styled.nav`
           left: 0;
           width: 0;
           height: 50%;
-          /* background-color: #fbf3e4; */
           background-color: white;
           transition: all 0.1s cubic-bezier(0.96, 0.06, 0.03, 0.93);
           z-index: -1;
