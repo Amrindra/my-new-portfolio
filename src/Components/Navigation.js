@@ -51,17 +51,19 @@ function Navigation({ handleClick }) {
         {navLinksData.map((item, index) => {
           return (
             <li key={index} className={item.className}>
-              {/* <NavLink to={item.path} activeclassname={item.activeClassName}>
+              <NavLink
+                to={item.path}
+                className={(navData) => (navData.isActive ? "active" : "")}
+              >
                 {item.title}
-              </NavLink> */}
-              <NavLink to={item.path}>{item.title}</NavLink>
+              </NavLink>
             </li>
           );
         })}
       </ul>
 
       <footer className="footer">
-        <p className="foter-name">&copy; Amrindra Ouk {currentYear}</p>
+        <p className="footer-name">&copy; Amrindra Ouk {currentYear}</p>
 
         <p className="footer-sourceCode">
           You are welcome to get my source code
@@ -99,10 +101,10 @@ const NavigationStyled = styled.nav`
     width: 100%;
     text-align: center;
 
-    /* .active-class {
-    background-color: red;
-    color: white;
-  } */
+    .active {
+      background: red;
+      color: white;
+    }
 
     li {
       display: block;
@@ -187,7 +189,7 @@ const NavigationStyled = styled.nav`
     border-top: 1px solid var(--border-color);
     width: 100%;
 
-    .foter-name {
+    .footer-name {
       padding: 1rem 0 1rem 0;
       font-size: 1.1rem;
       display: block;
