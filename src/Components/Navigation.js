@@ -124,7 +124,6 @@ const NavigationStyled = styled.nav`
           left: 0;
           width: 0;
           height: 50%;
-          /* background-color: #fbf3e4; */
           background-color: white;
           transition: all 0.1s cubic-bezier(0.96, 0.06, 0.03, 0.93);
           z-index: -1;
