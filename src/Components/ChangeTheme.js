@@ -32,7 +32,7 @@ function ChangeTheme() {
           // onClick={handleClick}
           style={{
             left: theme.state.darkMode ? 0 : 25,
-            backgroundColor: theme.state.darkMode ? "white" : "#222"
+            backgroundColor: theme.state.darkMode ? "white" : "#222",
           }}
         ></div>
       </div>
@@ -56,6 +56,7 @@ const ChangeThemeStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    cursor: pointer;
 
     .toggle-icon {
       width: 15px;
