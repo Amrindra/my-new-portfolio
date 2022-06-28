@@ -40,8 +40,8 @@ function ResumePage() {
             </h1>
 
             <p>
-              Seeking an opportunity to work as an entry-level developer or
-              anything in a field in which my tech skills are required.
+              Seeking an opportunity to work as a frontend developer or anything
+              in a field in which my tech skills are required.
             </p>
           </div>
         </div>
@@ -59,13 +59,49 @@ function ResumePage() {
 
                 <div className="job-title">
                   <h3>
-                    {" "}
                     <img
                       src="https://img.icons8.com/emoji/48/000000/diamond-with-a-dot-emoji.png"
                       alt=""
                     />
-                    {"  "}
-                    <em>TRAINING ASSOCIATE II | ABIOMED Inc 2017-Present</em>
+                    <strong>
+                      FRONTEND/REACT.JS/NEXT.JS/MERN Developer | Independent
+                      Projects
+                    </strong>
+                  </h3>
+                </div>
+                <sub style={{ color: "white" }}>Frelancing</sub>
+
+                <ul>
+                  <li>
+                    Developing new user-facing features and reusable components
+                    using React.js / Next.js.
+                  </li>
+                  <li>
+                    Optimizing components to work seamlessly across different
+                    browsers and devices
+                  </li>
+                  <li> Developing responsive web-based UI</li>
+                  <li>
+                    Using Redux / Redux Toolkit to store data globally and for
+                    easy retrieval of data to any component in the application
+                  </li>
+                  <li>
+                    Familiar with RESTful APIs using Node.js and Express.js
+                  </li>
+                  <li>Testing REST endpoints using POSTMAN</li>
+                </ul>
+                <p></p>
+
+                <div className="job-title">
+                  <h3>
+                    <img
+                      src="https://img.icons8.com/emoji/48/000000/diamond-with-a-dot-emoji.png"
+                      alt=""
+                    />
+
+                    <strong>
+                      TRAINING ASSOCIATE II | ABIOMED Inc 2017-Present
+                    </strong>
                   </h3>
                 </div>
 
@@ -73,24 +109,42 @@ function ResumePage() {
                   22 Cherry Hill Dr, Danvers, MA 01923, Phone: (978) 646-1400
                 </sub>
 
-                <p>
-                  • Responsible for training operators on the requirements of
-                  the assembly process <br />• Work as a Continuous Improvement
-                  Lead and participate in Kaizen Events, 5S system <br />•
-                  Experienced in creating Job Instruction Breakdown (JIB) <br />
-                  • Participate in critical quality initiatives to include
-                  capability, quality, and improve overall process capability{" "}
-                  <br />• Assist in establishing, implementing, and maintaining
-                  the quality management and training system <br />• Works
-                  towards improvements for process efficiencies <br />• Familiar
-                  with S4 Hana SAP, and Camstar System <br />
-                  • Proficiency in Soldering PCB Components and Molding under
-                  Microscope <br />• Collaborating Closely with the Engineering
-                  Team to Support the Building Process <br />• Expertise with
-                  Electrical Test Equipment, such as Leakage Current,
-                  Resistance, Multimeters, and Caliper Depth Test <br />•
-                  Supporting engineer in the Analytical Lab
-                </p>
+                <ul>
+                  <li>
+                    Responsible for training operators on the requirements of
+                    the assembly process
+                  </li>
+                  <li>
+                    Work as a Continuous Improvement Lead and participat in
+                    Kaizen Events, 5S system
+                  </li>
+                  <li>
+                    Experience in creating Job Instruction Breakdown (JIB)
+                  </li>
+                  <li>
+                    Participate in critical quality initiatives to include
+                    capability, quality, and improve overall process capability
+                  </li>
+                  <li>
+                    Assist in establishing, implementing, and maintaining the
+                    quality management and training system
+                  </li>
+                  <li>Work towards improvements for process efficiencies</li>
+                  <li>Familiar with S4 Hana SAP, and Camstar System </li>
+                  <li>
+                    Proficiency in Soldering PCB Components and Molding under
+                    Microscope
+                  </li>
+                  <li>
+                    Collaborating Closely with the Engineering Team to Support
+                    the Building Process
+                  </li>
+                  <li>
+                    Expertise with Electrical Test Equipment, such as Leakage
+                    Current, Resistance, Multimeters, and Caliper Depth Test
+                  </li>
+                  <li>Support engineer in the Analytical Lab</li>
+                </ul>
               </Fade>
             </div>
 
@@ -106,7 +160,6 @@ function ResumePage() {
                 </h3>
 
                 <em className="edu-em">
-                  {" "}
                   (The Royal University of Phnom Penh is an accredited
                   institution in U.S. terms. It offers a four-year Bachelor of
                   Science degree in Computer Science and Engineering that is
@@ -196,7 +249,7 @@ const ResumePageStyled = styled.div`
   }
 
   .resume {
-    background-color: #0a1d37;
+    background-color: #fff;
     padding-bottom: 4rem;
     border-radius: 1rem;
 
@@ -209,24 +262,31 @@ const ResumePageStyled = styled.div`
       padding-bottom: 25px;
     }
 
+    strong {
+      margin-left: 5px;
+    }
+
     h1 {
       font-size: 2rem;
       font-weight: 400;
       padding-top: 1rem;
       text-transform: uppercase;
-      color: white;
+      color: #333;
     }
 
     h3 {
       padding-top: 1rem;
-      color: white;
+      color: black;
     }
 
-    p {
-      padding-top: 1rem;
-      font-size: 1.1rem;
-      line-height: 35px;
-      color: white;
+    ul {
+      margin-top: 10px;
+    }
+
+    li {
+      list-style: inside;
+      line-height: 30px;
+      color: #555;
     }
 
     .diploma-title {
@@ -240,21 +300,22 @@ const ResumePageStyled = styled.div`
 
     .resume-body-section {
       display: flex;
-      gap: 1rem;
+      gap: 0.5rem;
 
       .resume-left {
-        background-color: #3c4f65;
+        /* background-color: #413f42; */
         padding: 0 25px;
         border-radius: 0 15px 15px 0;
         flex: 2;
       }
 
       .edu-em {
-        color: #f0ece3;
+        /* color: #f0ece3; */
+        color: #444;
       }
 
       .resume-right {
-        background-color: #404b69;
+        /* background-color: #404b69; */
         padding: 0 25px;
         border-radius: 15px 0 0 15px;
         flex: 1;
@@ -277,9 +338,10 @@ const ResumePageStyled = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 3rem;
+
     button {
-      color: white;
-      border: 2px solid white;
+      color: #222;
+      border: 2px solid #222;
       &:hover {
         background-color: grey;
       }

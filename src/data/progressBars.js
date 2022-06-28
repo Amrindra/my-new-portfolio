@@ -13,14 +13,14 @@ const progressBars = [
   },
   {
     icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
-    progress: "80%",
-    width: "80%",
+    progress: "90%",
+    width: "90%",
     skill: "React.JS",
   },
   {
     icon: "https://www.rlogical.com/wp-content/uploads/2021/08/Rlogical-Blog-Images-thumbnail.png",
-    progress: "70%",
-    width: "80%",
+    progress: "85%",
+    width: "85%",
     skill: "Next.JS",
   },
   {
@@ -31,8 +31,8 @@ const progressBars = [
   },
   {
     icon: "https://img.icons8.com/color/100/000000/javascript--v1.png",
-    progress: "80%",
-    width: "80%",
+    progress: "90%",
+    width: "90%",
     skill: "JavaScript",
   },
   {
@@ -43,15 +43,15 @@ const progressBars = [
   },
   {
     icon: "https://img.icons8.com/color/100/000000/mongodb.png",
-    progress: "70%",
+    progress: "80%",
     width: "80%",
     skill: "MongoDB + Mongoose",
   },
   {
-    icon: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/100/000000/external-angular-a-typescript-based-open-source-web-application-framework-logo-shadow-tal-revivo.png",
-    progress: "70%",
-    width: "60%",
-    skill: "Angular",
+    icon: "https://img.icons8.com/fluency/48/000000/typescript.png",
+    progress: "50%",
+    width: "50%",
+    skill: "Typescript",
   },
   {
     icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/100/000000/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png",
