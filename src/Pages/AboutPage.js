@@ -32,7 +32,9 @@ function AboutPage() {
         <div className="about-info">
           <h4>
             I am{" "}
-            <span style={{ color: darkMode && "#EC255A" }}>Amrindra Ouk,</span>
+            <span style={{ color: darkMode ? "#EC255A" : "#4b5a63" }}>
+              Amrindra Ouk,
+            </span>
           </h4>
           <Fade right>
             <p className="paragraph" style={{ color: darkMode && "white" }}>

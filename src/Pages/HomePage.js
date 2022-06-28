@@ -19,7 +19,10 @@ function HomePage() {
       </Helmet>
       <div className="introduction">
         <h1 style={{ color: darkMode ? "white" : "#3f3351" }}>
-          Hi, I'm <span style={{ color: darkMode && "#EC255A" }}>Amrindra</span>
+          Hi, I'm{" "}
+          <span style={{ color: darkMode && "red" }} className="my-name">
+            Amrindra
+          </span>
         </h1>
 
         <div className="intro-title">
@@ -114,6 +117,21 @@ const HomePageStyled = styled.div`
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .my-name {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 10, 36, 1) -30%,
+      rgba(115, 167, 223, 1) 50%,
+      rgba(92, 162, 213, 1) 18%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -moz-background-clip: text;
+    background-clip: text;
+    font-size: 4.5rem;
   }
 
   /* icons */

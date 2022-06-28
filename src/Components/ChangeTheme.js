@@ -12,7 +12,6 @@ function ChangeTheme() {
 
   return (
     <ChangeThemeStyled>
-      {" "}
       <div className="toggle" onClick={handleClick}>
         {/* <img src={btnIcon ? Sun : Moon} alt="sun icon" className="toggle-icon"/> */}
         <img

@@ -102,8 +102,8 @@ const NavigationStyled = styled.nav`
     text-align: center;
 
     .active {
-      background: red;
-      color: white;
+      background: white;
+      color: black;
     }
 
     li {
