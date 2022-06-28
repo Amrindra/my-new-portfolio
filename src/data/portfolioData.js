@@ -7,6 +7,24 @@ import calculator from "../images/mortgage-tip-calculator.png";
 
 const portfolioData = [
   {
+    img: "https://user-images.githubusercontent.com/70451928/176249565-49395617-73f4-4233-ae16-82aaf3dc3756.png",
+    link: "https://github.com/Amrindra/Apple-Website-Clone",
+    title: "Apple site clone",
+    demo: "See Demo",
+    siteLink: "https://z2piu2.csb.app/",
+    desc: "This clone is for educational purposes only",
+    button: "View Code",
+  },
+  {
+    img: "https://user-images.githubusercontent.com/70451928/176248148-bb9838d8-5023-4303-8df5-139805e6813f.png",
+    link: "https://github.com/Amrindra/airbnd-clone",
+    title: "Airbnb clone",
+    demo: "See Demo",
+    siteLink: "https://airbnb-clone-personel-project.vercel.app/",
+    desc: "This clone is for educational purposes only",
+    button: "View Code",
+  },
+  {
     img: "https://user-images.githubusercontent.com/70451928/157096037-ea90f7a4-aeef-483b-908e-418f4823b5fb.png",
     link: "https://github.com/Amrindra/Pizza-App",
     title: "Pizza App",
