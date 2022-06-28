@@ -9,6 +9,9 @@ import Fade from "react-reveal/Fade";
 import { Helmet } from "react-helmet";
 import Button from "../Components/Buttons/Button";
 import ResumeCertificate from "../Components/ResumeCertificates";
+import GithubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 
 function ResumePage() {
   return (
@@ -25,10 +28,9 @@ function ResumePage() {
             <h1>Amrindra Ouk</h1>
             <p>
               Very enthusiastic about technology and learning new things with a
-              background in Computer Science and Engineering. Taking online
-              courses to build my strengths in programming languages and IT
-              skills. Experienced as a trainer, manufacturing practices, and
-              various duties with a background in medical devices.
+              background of Computer Science and Engineering. I design
+              responsive web apps with modern technologies. Experienced as a
+              trainer and a background in medical devices.
             </p>
           </div>
 
@@ -223,6 +225,34 @@ function ResumePage() {
           </div>
         </div>
 
+        <div className="icons">
+          <a
+            href="mailto: oamrindra@gmail.com"
+            className="icon i-mail"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <EmailIcon />
+          </a>
+          <a
+            href="https://github.com/Amrindra"
+            className="icon i-github"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GithubIcon />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/amrindra-ouk-0960161a4/"
+            className="icon i-linkedIn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedInIcon />
+          </a>
+        </div>
+
         <a
           href="https://drive.google.com/file/d/10gTwyGGUFpEOX0iNc5ppAsIs2AyId-q1/view?usp=sharings"
           className="download-button"
@@ -334,10 +364,37 @@ const ResumePageStyled = styled.div`
     }
   }
 
+  .icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4rem;
+    color: #222;
+    margin-top: 30px;
+
+    .icon {
+      border: 2px solid var(--border-color);
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      border-radius: 50%;
+      padding: 2px;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 0.4rem;
+      }
+
+      &:hover {
+        transform: translate(2.5);
+        transition: 900ms;
+      }
+    }
+  }
+
   .download-button {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
 
     button {
       color: #222;
