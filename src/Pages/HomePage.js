@@ -41,7 +41,7 @@ function HomePage() {
         <div className="body-text">
           <Fade left>
             <h3>
-              I'm a technology tnthusiast who loves solving problems with
+              I'm a technology enthusiast who loves solving problems with
               programming & designing responsive websites.
             </h3>
           </Fade>
