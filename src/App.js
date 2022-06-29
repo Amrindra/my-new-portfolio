@@ -7,14 +7,11 @@ import ResumePage from "./Pages/ResumePage";
 import ProjectPage from "./Pages/ProjectPage";
 import CertificatePage from "./Pages/CertificatePage";
 import ContactPage from "./Pages/ContactPage";
-// import MenuIcon from "@mui/icons-material/Menu";
-// import CloseIcon from "@mui/icons-material/Close";
 import { useState, useContext, useEffect } from "react";
 import ChangeTheme from "./Components/ChangeTheme";
 import { ThemeContext } from "./context";
 import AllSections from "./Pages/AllSections";
 import { useLocation } from "react-router";
-// import { Link } from "react-router-dom";
 
 // this ScrollToTop function is used to handle the page position when we switch to the new page it will remain on the top
 function ScrollToTop(props) {

@@ -61,6 +61,7 @@ const ResumeCertificatesStyled = styled.div`
 
   .sub-title {
     margin-left: 20px;
+    color: #555;
   }
 `;
 

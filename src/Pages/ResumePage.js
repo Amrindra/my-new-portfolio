@@ -92,7 +92,6 @@ function ResumePage() {
                   </li>
                   <li>Testing REST endpoints using POSTMAN</li>
                 </ul>
-                <p></p>
 
                 <div className="job-title">
                   <h3>
@@ -150,13 +149,15 @@ function ResumePage() {
               </Fade>
             </div>
 
-            <div className="eduction">
+            <div className="education">
               <Fade left>
                 <h1>
                   <i className="fas fa-user-graduate" /> Education
                   <div className="underline"></div>
                 </h1>
-                <h3>Royal University of Phnom Penh, Cambodia, 2010-2013</h3>
+                <h3 className="school-name">
+                  Royal University of Phnom Penh, Cambodia, 2010-2013
+                </h3>
                 <h3 className="diploma-title">
                   Associate in <b>Computer Science</b> and <b>Engineering</b>
                 </h3>
@@ -283,9 +284,12 @@ const ResumePageStyled = styled.div`
     padding-bottom: 4rem;
     border-radius: 1rem;
 
-    .resume-title > p,
-    .resume-objective > p {
-      padding: 1.2rem 2rem;
+    .resume-head-wrapper {
+      .resume-title > p,
+      .resume-objective > p {
+        padding: 1.2rem 2rem;
+        color: #333;
+      }
     }
 
     .resume-objective {
@@ -326,9 +330,14 @@ const ResumePageStyled = styled.div`
       line-height: 30px;
       color: #555;
     }
-
-    .diploma-title {
-      margin-bottom: 0.7rem;
+    .education {
+      .school-name {
+        color: #444;
+      }
+      .diploma-title {
+        margin-bottom: 0.7rem;
+        color: #444;
+      }
     }
 
     .resume-head-wrapper {
