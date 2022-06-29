@@ -71,18 +71,18 @@ function ResumePage() {
                     </strong>
                   </h3>
                 </div>
-                <sub style={{ color: "white" }}>Frelancing</sub>
+                <sub>Frelancing</sub>
 
                 <ul>
                   <li>
-                    Developing new user-facing features and reusable components
+                    Develop new user-facing features and reusable components
                     using React.js / Next.js.
                   </li>
                   <li>
                     Optimizing components to work seamlessly across different
                     browsers and devices
                   </li>
-                  <li> Developing responsive web-based UI</li>
+                  <li> Develop responsive web-based UI</li>
                   <li>
                     Using Redux / Redux Toolkit to store data globally and for
                     easy retrieval of data to any component in the application
@@ -107,7 +107,7 @@ function ResumePage() {
                   </h3>
                 </div>
 
-                <sub style={{ color: "white" }}>
+                <sub>
                   22 Cherry Hill Dr, Danvers, MA 01923, Phone: (978) 646-1400
                 </sub>
 
@@ -292,8 +292,17 @@ const ResumePageStyled = styled.div`
       padding-bottom: 25px;
     }
 
+    hr {
+      border: 0.3px solid lightgray;
+    }
+
+    sub {
+      color: #666;
+    }
+
     strong {
       margin-left: 5px;
+      color: black;
     }
 
     h1 {
@@ -306,11 +315,10 @@ const ResumePageStyled = styled.div`
 
     h3 {
       padding-top: 1rem;
-      color: black;
     }
 
     ul {
-      margin-top: 10px;
+      margin-top: 5px;
     }
 
     li {
@@ -341,7 +349,7 @@ const ResumePageStyled = styled.div`
 
       .edu-em {
         /* color: #f0ece3; */
-        color: #444;
+        color: #666;
       }
 
       .resume-right {
@@ -350,6 +358,7 @@ const ResumePageStyled = styled.div`
         border-radius: 15px 0 0 15px;
         flex: 1;
       }
+
       @media (max-width: 768px) {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(0, 27rem));
@@ -377,18 +386,9 @@ const ResumePageStyled = styled.div`
       justify-content: center;
       align-content: center;
       border-radius: 50%;
-      padding: 2px;
+      padding: 4px;
+      margin: 0 5px;
       cursor: pointer;
-      transition: all 0.4s ease-in-out;
-
-      &:not(:last-child) {
-        margin-right: 0.4rem;
-      }
-
-      &:hover {
-        transform: translate(2.5);
-        transition: 900ms;
-      }
     }
   }
 
@@ -399,9 +399,6 @@ const ResumePageStyled = styled.div`
     button {
       color: #222;
       border: 2px solid #222;
-      &:hover {
-        background-color: grey;
-      }
     }
   }
   /* .resume-body-section {

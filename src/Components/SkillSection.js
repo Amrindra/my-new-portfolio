@@ -56,6 +56,7 @@ const SkillSectionStyled = styled.div`
 
     h3 {
       font-size: 1.5rem;
+      color: white;
     }
 
     .skill-bar {
@@ -72,19 +73,17 @@ const SkillSectionStyled = styled.div`
 
         .inner-progress {
           position: absolute;
-
+          height: 100%;
+          bottom: 0;
+          left: 0;
+          color: white;
+          border-radius: 20px;
           /* background-color: #037fff; */
           background: linear-gradient(
             135deg,
             rgba(9, 49, 235, 0.83) 0%,
             rgba(154, 183, 249, 0.74) 100%
           );
-
-          height: 100%;
-          bottom: 0;
-          left: 0;
-          color: white;
-          border-radius: 20px;
 
           .skills {
             padding: 0 6px;

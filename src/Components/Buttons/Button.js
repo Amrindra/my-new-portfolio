@@ -11,10 +11,10 @@ function Button({ title }) {
       {" "}
       <button
         className="global-button"
-        style={{
-          color: darkMode && "white",
-          border: darkMode && "2px solid white"
-        }}
+        // style={{
+        //   color: darkMode && "white",
+        //   border: darkMode && "2px solid white"
+        // }}
       >
         {title}
       </button>

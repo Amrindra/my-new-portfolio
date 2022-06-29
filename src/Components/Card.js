@@ -86,12 +86,12 @@ const CardStyled = styled.div`
 
     .card-btn {
       padding: 0.15rem;
-      width: 50%;
+      width: 35%;
       font-family: inherit;
       font-weight: bold;
       font-size: 1rem;
-      margin: 1rem 2rem;
-      border: 2px solid grey;
+      margin: 0 0 20px 0;
+      border: 1px solid grey;
       border-radius: 1rem;
       background: transparent;
       color: grey;
@@ -106,7 +106,7 @@ const CardStyled = styled.div`
     }
 
     &:hover .card-btn {
-      background: #000;
+      background: #444;
       color: white;
     }
 

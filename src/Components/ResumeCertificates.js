@@ -14,7 +14,7 @@ function ResumeCertificates() {
             <i className="fas fa-link" />
           </a>
         </li>
-        <sup>Udemy, Online Bootcamp</sup>
+        <sup className="sub-title">Udemy, Online Bootcamp</sup>
 
         <li>
           Google IT Automation with Python{" "}
@@ -25,7 +25,7 @@ function ResumeCertificates() {
             <i className="fas fa-link" />
           </a>
         </li>
-        <sup>Grow with Google</sup>
+        <sup className="sub-title">Grow with Google</sup>
         <li>
           Python 3 Programming{" "}
           <a
@@ -35,7 +35,7 @@ function ResumeCertificates() {
             <i className="fas fa-link" />
           </a>
         </li>
-        <sup>University Of Michigan online course</sup>
+        <sup className="sub-title">University Of Michigan online course</sup>
         <li>
           Google IT Support{" "}
           <a
@@ -45,7 +45,7 @@ function ResumeCertificates() {
             <i className="fas fa-link" />
           </a>
         </li>
-        <sup>Grow with Google</sup>
+        <sup className="sub-title">Grow with Google</sup>
       </ul>
     </ResumeCertificatesStyled>
   );
@@ -54,10 +54,13 @@ function ResumeCertificates() {
 const ResumeCertificatesStyled = styled.div`
   margin: 1.5rem 0;
   margin-left: 1rem;
-  color: white;
 
   li {
     list-style: square;
+  }
+
+  .sub-title {
+    margin-left: 20px;
   }
 `;
 

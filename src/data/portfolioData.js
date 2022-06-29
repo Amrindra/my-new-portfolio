@@ -59,7 +59,7 @@ const portfolioData = [
     demo: "See Demo",
     siteLink: "https://mortgage-and-tip-calculator.vercel.app/",
 
-    desc: "These Mortgage and Tip calculators are built with React.js. I made these apps to help people to easily calculate their mortgage as well as to calculate the tip when at the restaurant.",
+    desc: "These Mortgage and Tip calculators are built with React.js.",
     button: "View Code",
   },
   {

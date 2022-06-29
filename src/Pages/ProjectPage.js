@@ -63,9 +63,13 @@ const PortfolioPageStyled = styled.div`
 
   .see-demo {
     text-align: center;
-    color: #c84b31;
+    color: teal;
     margin: 10px 0 5px 0;
     text-decoration: underline;
+
+    h3 {
+      font-size: 1rem;
+    }
   }
 
   /* .button {

@@ -51,6 +51,12 @@ const CertificateStyled = styled.div`
     gap: 3rem 2.5rem;
     justify-content: center;
 
+    //This card-btn is from Card component className
+    .card-btn {
+      width: 45%;
+      margin-top: 15px;
+    }
+
     @media screen and (max-width: 1500px) {
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem 2rem;
