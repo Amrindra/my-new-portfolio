@@ -273,7 +273,8 @@ const ContactStyled = styled.section`
     }
 
     .map-section {
-      height: 70vh;
+      /* height: 70vh; */
+      display: none;
     }
   }
 `;

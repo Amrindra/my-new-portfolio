@@ -44,9 +44,9 @@ const CardStyled = styled.div`
     overflow: hidden;
     box-shadow: 0 5px 10px white;
     border-radius: 0.8rem;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
     /* cursor: pointer; */
     transition: transform 200ms ease-in;
     background-color: white;

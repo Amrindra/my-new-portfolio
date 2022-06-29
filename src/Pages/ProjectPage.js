@@ -56,8 +56,9 @@ const PortfolioPageStyled = styled.div`
       gap: 2rem 2rem;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 868px) {
       grid-template-columns: repeat(auto-fit, minmax(12rem, 20rem));
+      margin-top: 2rem;
     }
   }
 
@@ -72,11 +73,10 @@ const PortfolioPageStyled = styled.div`
     }
   }
 
-  /* .button {
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-  } */
+  @media screen and (max-width: 684px) {
+    .card-wrapper {
+    }
+  }
 `;
 
 export default ProjectPage;

@@ -66,6 +66,12 @@ const CertificateStyled = styled.div`
       grid-template-columns: repeat(auto-fit, minmax(12rem, 20rem));
     }
   }
+
+  /* @media screen and (max-width: 684px) {
+    .certicates-wrapper {
+      
+    }
+  } */
 `;
 
 export default CertificatePage;

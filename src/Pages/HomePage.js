@@ -18,12 +18,12 @@ function HomePage() {
         <meta name="description" content="Portfolio" />
       </Helmet>
       <div className="introduction">
-        <h1 style={{ color: darkMode ? "white" : "#3f3351" }}>
-          Hi, I'm{" "}
+        <div className="intro_name_wrapper">
+          <h1 style={{ color: darkMode ? "white" : "#3f3351" }}>Hi, I'm </h1>
           <span style={{ color: darkMode && "red" }} className="my-name">
             Amrindra
           </span>
-        </h1>
+        </div>
 
         <div className="intro-title">
           <div
@@ -105,18 +105,27 @@ const HomePageStyled = styled.div`
   text-align: center;
   padding-top: 3rem;
 
-  h1 {
-    letter-spacing: 0.3rem;
-    /* font-size: 1rem; */
-  }
+  .introduction {
+    .intro_name_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      gap: 1rem;
 
-  h3 {
-    margin: 70px 0 80px 0;
-    font-size: 1.5rem;
-    letter-spacing: 0.15rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+      h1 {
+        letter-spacing: 0.3rem;
+        /* font-size: 1rem; */
+      }
+
+      h3 {
+        margin: 70px 0 80px 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.15rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   }
 
   .my-name {
@@ -223,7 +232,7 @@ const HomePageStyled = styled.div`
   }
 
   /* *************************************** */
-
+  /* min-width */
   @media screen and (min-width: 768px) {
     h1 {
       /* margin-top: 7rem; */
@@ -247,6 +256,22 @@ const HomePageStyled = styled.div`
   }
 
   /* *************************************** */
+
+  @media screen and (max-width: 684px) {
+    .introduction {
+      margin-top: -40px;
+      .intro_name_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+          font-size: 3rem;
+          margin-top: -10px;
+        }
+      }
+    }
+  }
 
   @media screen and (max-width: 320px) {
     width: 100%;
