@@ -7,6 +7,15 @@ import calculator from "../images/mortgage-tip-calculator.png";
 
 const portfolioData = [
   {
+    img: "https://user-images.githubusercontent.com/70451928/179336548-c3a508a1-4fbc-4ff4-a56f-e1dc75153ea4.png",
+    link: "https://github.com/Amrindra/react-admin-dashboard/tree/main/",
+    title: "Admin Dashboard",
+    demo: "See Demo",
+    siteLink: "https://2mk5tr.csb.app/",
+    desc: "This admin dashboard is built with React, SCSS, Context API",
+    button: "View Code",
+  },
+  {
     img: "https://user-images.githubusercontent.com/70451928/176249565-49395617-73f4-4233-ae16-82aaf3dc3756.png",
     link: "https://github.com/Amrindra/Apple-Website-Clone",
     title: "Apple site clone",

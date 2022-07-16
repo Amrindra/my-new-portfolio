@@ -40,7 +40,7 @@ function HomePage() {
 
         <div className="body-text">
           <Fade left>
-            <h3>
+            <h3 className="body-text">
               I'm a technology enthusiast who loves solving problems with
               programming & designing responsive websites.
             </h3>
@@ -116,15 +116,15 @@ const HomePageStyled = styled.div`
         letter-spacing: 0.3rem;
         /* font-size: 1rem; */
       }
+    }
 
-      h3 {
-        margin: 70px 0 80px 0;
-        font-size: 1.5rem;
-        letter-spacing: 0.15rem;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .body-text {
+      margin: 70px 0 80px 0;
+      font-size: 1.6crem;
+      letter-spacing: 0.15rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
