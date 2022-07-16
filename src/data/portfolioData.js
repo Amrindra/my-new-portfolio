@@ -12,7 +12,7 @@ const portfolioData = [
     title: "Admin Dashboard",
     demo: "See Demo",
     siteLink: "https://2mk5tr.csb.app/",
-    desc: "This admin dashboard is built with React, SCSS, Context API",
+    desc: "This admin dashboard is built with React, SCSS, Context API. This app is not mobile-friendly",
     button: "View Code",
   },
   {
