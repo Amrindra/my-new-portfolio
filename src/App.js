@@ -12,6 +12,12 @@ import ChangeTheme from "./Components/ChangeTheme";
 import { ThemeContext } from "./context";
 import AllSections from "./Pages/AllSections";
 import { useLocation } from "react-router";
+// require("dotenv").config();
+import ReactGA from "react-ga";
+
+// ReactGA.initialize(process.env.TRACKING_ID);
+const TRACKING_ID = "UA-209096337-2";
+ReactGA.initialize(TRACKING_ID);
 
 // this ScrollToTop function is used to handle the page position when we switch to the new page it will remain on the top
 function ScrollToTop(props) {
