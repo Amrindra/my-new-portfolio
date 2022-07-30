@@ -17,7 +17,20 @@ import ReactGA from "react-ga";
 
 // ReactGA.initialize(process.env.TRACKING_ID);
 const TRACKING_ID = "UA-209096337-2";
-ReactGA.initialize(TRACKING_ID);
+
+// Setting up google analytics
+const usePageView = () => {
+  let location = useLocation();
+
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      ReactGA.initialize(TRACKING_ID);
+      window.GA_INITIALIZED = true;
+    }
+    ReactGA.set({ page: location.pathname });
+    ReactGA.pageview(location.pathname);
+  }, [location]);
+};
 
 // this ScrollToTop function is used to handle the page position when we switch to the new page it will remain on the top
 function ScrollToTop(props) {
@@ -36,6 +49,9 @@ export default function App() {
 
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
+  //From the function above
+  usePageView();
 
   return (
     <div
